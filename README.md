@@ -59,3 +59,8 @@ params = {
 
 plt.rcParams.update(params)
 ```
+
+## Credits
+
+- narsonalin for [figure_size](https://github.com/narsonalin/figure_size)
+- jwalton for [his blog](https://jwalton.info/Embed-Publication-Matplotlib-Latex/)
