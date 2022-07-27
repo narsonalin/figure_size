@@ -1,4 +1,4 @@
-figure_size.egg-info
+*.egg-info/
 build
 dist
 __pycache__/
