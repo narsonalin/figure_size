@@ -1,7 +1,7 @@
 # LaTeXfigsizer
 Make some figures in LaTeX more easily ?
 
-## Configuration
+## What you need to know
 
 You first need to know the the number of points in a textwidth of your latex
 document. To do so, add in your TeX document:
@@ -9,6 +9,20 @@ document. To do so, add in your TeX document:
 ```latex
 % return the textwidth in pts:
 \showthe\textwidth
+% or
+\showthe\columnwidth
+```
+
+## Installation
+
+This package is for the moment to useless to be added on `PyPI`. However, if you
+are willing to use it, you can install locally (preferably in a virtual
+environment) using `pip`.
+
+```bash
+git clone https://github.com/lmenou/latexfigsizer.git;
+cd latexfigsizer;
+pip install -e .;
 ```
 
 ## Usage
@@ -18,7 +32,11 @@ creating your figure. You can modify the value on the fly. See second example.
 
 ```python
 import matplotlib.pyplot as plt
-from laTeXfigsizer import *
+from latexfigsizer import *
+
+sizer = Sizer()
+
+# or
 
 sizer = Sizer(
     width=455.24411,
@@ -26,6 +44,8 @@ sizer = Sizer(
     subplots=(1, 1),
     golden_ratio=(1 + math.sqrt(5) / 2),
 )
+
+# then
 
 fig, ax = plt.subplots(1, 2, figsize=sizer())
 
