@@ -4,7 +4,7 @@ import math
 from typing import Tuple
 
 
-class Sizer:
+class LatexFigSizer:
     """
     This is a class to set figures dimensions to avoid scaling in LaTeX.
 

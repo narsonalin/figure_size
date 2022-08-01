@@ -34,11 +34,11 @@ creating your figure. You can modify the value on the fly. See second example.
 import matplotlib.pyplot as plt
 from latexfigsizer import *
 
-sizer = Sizer()
+sizer = LatexFigSizer()
 
 # or
 
-sizer = Sizer(
+sizer = LatexFigSizer(
     width=455.24411,
     fraction=1,
     subplots=(1, 1),
